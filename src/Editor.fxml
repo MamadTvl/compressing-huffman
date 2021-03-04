@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Editor">
+   <children>
+      <Pane layoutX="257.0" layoutY="119.0" prefHeight="637.0" prefWidth="877.0" style="-fx-background-color: #4a70ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="Pane" prefHeight="637.0" prefWidth="191.0" style="-fx-background-color: #6b8fff;">
+               <children>
+                  <Label layoutX="12.0" layoutY="24.0" text="Huffman Editor">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button  layoutX="63.0" layoutY="77.0" mnemonicParsing="false" onAction="#Encode" text="Encode" />
+                  <Button fx:id="DecodeB" disable="true" layoutX="63.0" layoutY="124.0" mnemonicParsing="false" onAction="#Decode" text="Decode" />
+                  <Button layoutX="69.0" layoutY="171.0" mnemonicParsing="false" onAction="#ShowText" text="Show" />
+                  <Button fx:id="Browse" disable="true" layoutX="46.0" layoutY="557.0" mnemonicParsing="false" onAction="#ChooseFile" text="Browse" />
+                  <CheckBox fx:id="Choose" alignment="CENTER_RIGHT" layoutX="18.0" layoutY="562.0" mnemonicParsing="false" onAction="#BrowseOn" />
+                  <Button layoutX="125.0" layoutY="557.0" mnemonicParsing="false" onAction="#Save" text="Save" />
+                  <ProgressBar fx:id="bar" layoutX="31.0" layoutY="307.0" prefHeight="9.0" prefWidth="136.0" progress="0.0" />
+               </children></Pane>
+            <TextArea fx:id="TextEditor" layoutX="191.0" layoutY="47.0" maxWidth="1.7976931348623157E308" prefHeight="544.0" prefWidth="687.0" />
+            <Label fx:id="Progress" layoutX="481.0" layoutY="602.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>

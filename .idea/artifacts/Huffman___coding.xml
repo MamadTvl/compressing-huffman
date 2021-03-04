@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Huffman - coding">
+    <output-path>$PROJECT_DIR$/out/artifacts/Huffman___coding</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="MyEditor" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Huffman___coding.jar">
+        <element id="module-output" name="Huffman - coding" />
+      </element>
+    </root>
+  </artifact>
+</component>
